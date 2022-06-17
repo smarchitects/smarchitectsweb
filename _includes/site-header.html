@@ -1,0 +1,27 @@
+<header id="header" class="grid-spaceAround bg-overlay bg-beton bg-image{% if page.url == "/" %}
+tall-100
+{%else%} tall-70 {%endif%}">
+    <div class="col-12 right">
+    	<a class="hamburger-button mob-show"> &#9776; </a>
+  	</div>
+        {%include header-nav.html%}
+     
+    <div class="col-12 padded-t-5 center">
+       <a href="/"> <h1 class="logo"><span class="SM">SM</span> ARCHITECTS</h1> </a>
+    </div>
+    {%if page.url=="/"%}
+    <div data-aos="fade-right">
+    <h3 class="col-12 slova center">Urbanismus <span class="red">|</span> Architektura <span class="red">|</span>  Design <span class="red">|</span>  Projekt Management <span class="red">|</span>  Inženýring</h3>
+    </div>
+    {%endif%}
+    <div class="mobile-menu"> 
+        <nav> 
+          <a href="/"> Home </a>
+          <a href="/o-nas.html"> O nás </a>
+          <a href="/galerie.html"> Reference </a>
+          <!-- <a href="/reference.html"> Reference </a> -->
+          <a href="/kontakt.html"> Kontakt </a>
+          <a href="/vzdelani.html"> Vzdělání </a>
+        </nav>
+    </div> 
+</header>

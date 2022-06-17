@@ -1,0 +1,36 @@
+_select_data:
+  aspect-ratios:
+    - square
+    - portrait
+    - portrait-tall
+    - landscape
+    - landscape-wide
+
+  column-sizes:
+    col-12: celá-šířka
+    col-6_sm-12: polovina
+    col-4_sm-12: třetina
+    col-3_sm-12: čtvrtina
+  
+  ids:
+   /galerie#projekt-1: k-h
+   /galerie#projekt-2: k-h-interiery
+   /galerie#projekt-3: kzs-benatky
+   /galerie#projekt-4: skalka
+   /galerie#projekt-5: mu-lysa-podkrovi
+   /galerie#projekt-6: lodni-vytah
+   /galerie#projekt-7: vila-doubkova
+   /galerie#projekt-8: tenisova-hala
+   /galerie#projekt-9: meckp-benatky
+   /galerie#projekt-10: rd-praha
+   /galerie#projekt-11: rd-lany
+   /galerie#projekt-12: rezidence-prazska
+   /galerie#projekt-13: centrum-benatky
+   /galerie#projekt-14: infocentrum-lysa
+   
+
+
+
+
+
+  

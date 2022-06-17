@@ -1,0 +1,568 @@
+@font-face{
+    font-family:'Century Gothic W05 Regular';
+    src:url("Fonts/5321689/d722f0d1-f586-442f-83de-f80218687a92.woff2") format("woff2"),url("Fonts/5321689/d5622205-b4e1-48e5-98a6-4ffe2ad76689.woff") format("woff");
+}
+
+
+:root{
+    --featured: #e62400;
+    --writing: #595858;
+    --bg: white;
+    --bg-faded: #eff1ee;
+    --light-text: #E3AB38;
+    --nadpis: font-family: 'Gothic A1';
+}
+
+
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+  
+body {
+font-family: 'Century Gothic W05 Regular';
+color: var(--writing);
+background-color: var(--bg);
+font-size: 1.3rem;
+}
+
+img {
+max-width:100%;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+a:hover{
+    color: var(--featured);
+}
+
+[class*="col-"]{
+    margin: 0;
+}
+
+/* ------------- Utility Classes --------------  */
+
+
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+.tall-200 { min-height: 200vh; }
+
+.light-text   { color: white; }
+.caps {text-transform: uppercase;}
+
+
+.padded   {  padding: 5%;    }
+.padded-05 {  padding: 0.5rem;  }
+.padded-1 {  padding: 1rem;  }
+.padded-2 {  padding: 2rem;  }
+.p-t-0{padding-top:0;}
+.p-t-3{padding-top:3%;}
+.padded-l-2{padding-left: 2rem;}
+.p-b-8{padding-bottom: 8%;}
+.neg-m-b{margin-bottom: -0.2rem;}
+
+.capped-width { max-width: 1100px; margin: auto;}
+
+.relative{
+    position: relative;
+}
+
+.text-md{font-size: 1.4rem;}
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+.portrait-tall{padding-bottom: 175%;}
+
+  
+.portrait{padding-bottom: 125%;}
+  
+.square{padding-bottom: 100%;}
+
+  
+.landscape{padding-bottom: 66%;}
+
+  
+.landscape-wide{padding-bottom: 56%;}
+
+
+
+/* General typography */
+
+h2, h3, h4, h5, h6 {
+line-height: 1;
+padding-bottom: 1.8rem;
+}
+
+
+
+p, ul {
+margin-bottom: 0.8rem;
+font-size: 1.3rem;
+}
+
+.bigger{font-size: 2.8rem;}
+.smaller{font-size: 1.4rem;}
+
+
+
+hr { /* this is a line element */
+border: none;
+border-bottom: 3px solid;
+width: 4rem;
+margin-bottom: 1rem;
+}
+
+
+/* Unique Typography Styles */
+
+.emphasis {
+font-size: 1.2rem;
+}
+
+.logo{
+    padding-bottom: 1rem;
+    margin: 0;
+    color: var(--writing);
+    font-family: var(--nadpis);
+    font-size: 9.5rem;
+    font-weight: normal;
+    padding-bottom:0;
+    margin-top: 2rem;
+}
+
+.SM{
+    color: var(--featured);
+}
+
+footer h3{
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+.slova{
+    color: var(--writing);
+    padding-bottom:0;
+    margin-top: 2rem;
+
+}
+
+.red{
+    color: var(--featured);
+}
+
+/* Specific link styles */
+
+.button{
+    background-color: var(--writing);
+    color: white;
+    border: none;
+    padding: 2rem 1rem;
+    letter-spacing: 0.1em;
+    margin: 0.5 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.button:hover{
+    border: 2px solid var(--featured);
+    background-color: white;
+    color: var(--featured);
+}
+
+
+
+/* Images and gallery styles */
+
+
+
+
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-beton{
+    background-image: url('/images/beton.jpg');
+}
+
+.gallery [class*="col-"]{
+    padding: 0.2rem;
+}
+
+.gallery .gallery-item {
+    border-bottom: none;
+}
+
+.lg-backdrop {
+    background-color: var(--writing) ;
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
+.capped-width{
+    max-width: 1000px;
+}
+
+.img-team{
+    border-radius: 100%;
+}
+
+
+.bg-overlay{position: relative;}
+
+.bg-overlay::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.65);
+    
+}
+
+.bg-overlay > *{
+    position: relative;
+}
+
+.galerie-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: var(--writing);
+}
+
+.galerie-overlay:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+/* Hamburger nav styles */
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    margin-top: -0.7rem;
+    position: fixed;
+    right: 1rem;
+    top: 2rem;
+    z-index: 3;
+}
+
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.hamburger-button.active {
+    color: var(--featured);
+}
+
+
+.mobile-menu {
+    display: none; 
+    background-color: var(--bg); 
+    color: var(--writing);
+    padding: 5%;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.mobile-menu a:hover{
+    color: var(--featured);
+}
+
+.mob-show {
+    display: none; 
+}
+
+.clickedon{
+    color: var(--featured);
+}
+
+.lazy-div{
+    background-color: var(--bg-faded);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+.web-nav{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;;
+}
+
+.web-nav a{
+    padding: 0.5rem 1.5rem;
+}
+
+.web-nav a:hover{
+    color: var(--featured);
+    font-size: 2.1rem;
+    transition: 0.2s;
+}
+
+
+
+/* Slider */
+.testimonial-slider-container {
+    padding: 5%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .slider-item {
+    padding: 1rem;
+    display: none;
+  }
+  
+  .slider-item:first-child {
+    display: block;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next::before, .slick-prev::before {
+      font-family: inherit;
+      font-size: 20px;
+      line-height: 1;
+      opacity: .75;
+      color: rgb(90,90,90);
+  }
+  
+  .slick-dots {
+    left: 0;
+    bottom: 10px;
+    /*  Without this the padding on the parent affects the centering of the dots. Do not delete.    */
+  }
+  
+  .slick-dots li,
+  .slick-dots li button {
+    width: 10px;
+  }
+  
+  .slick-dots li button::before {
+    color: rgb(90,90,90);
+  }
+  
+  .slick-dots li.slick-active button::before {
+    color: rgb(90,90,90);
+  }
+  
+  
+  /* Slider Text Styles  */
+  
+  .slider-item p {
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+  
+
+
+  /* Hover team styles */
+.hover-container {
+    background-size: cover;
+    background-position: center;
+}
+  
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+}
+  
+.hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: var(--bg);
+    font-size: 1.9rem;
+}
+  
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+  
+.hover-inner p {
+    margin-bottom: 0;
+}
+
+
+/* team members popup styles */
+.popup {
+    position: fixed;
+    left: 100vw;
+    z-index: 5;
+    padding: 2rem;
+    background-color: white;
+}
+.popup.onscreen {
+left: 20%;
+right: 20%;
+top: 20%;
+}
+  
+.popUpOverlay {
+background-color: rgba(0,0,0,0);
+transition: all 1s;
+position: fixed;
+}
+
+.popUpOverlay.onscreen {
+background-color: grey;
+top:0;
+left:0;
+bottom:0;
+right:0;
+}
+
+polygon, path{
+fill:rgba(0,0,0,0);
+stroke:black;
+stroke-width:5;
+}
+
+.popupX {
+    position:absolute;
+top:1rem;
+right:1rem;
+width:1rem;
+}
+
+.pointer{
+      cursor: pointer;
+}
+
+/* Form styling*/
+form input, form textarea{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 2px solid var(--writing);
+    /*this will override the blue outline upon hovering or clicking*/
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+  /* sets the outlien to teal when its being focuse --> clicked on/written in*/
+form input:focus, form textarea:focus{
+    border-color: var(--featured);
+}
+
+textarea{
+    min-height: 5rem;
+}
+
+form label{
+    margin-top: 1rem;
+    display: block;
+    color: var(--writing);
+    font-weight: bold;
+}
+
+form button{
+    background-color: var(--writing);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.5 0;
+}
+
+form button:hover{
+    background-color: white;
+    color: var(--featured);
+    border: 2px solid var(--featured);
+    transition: 0.2s;
+
+}
+
+#kontakt{
+    line-height: 1.4;
+}
+
+
+
+
+
+
+@media(max-width:48em) {
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+    .logo{
+        font-size: 6rem;
+    }
+}
+
+@media(max-width:36em){
+    .logo{
+        font-size: 4rem;
+    }
+    .slova{
+        font-size: 1.15rem;
+    }
+    .popup.onscreen {
+        left: 14%;
+        right: 14%;
+        top: 20%;
+        }
+}
