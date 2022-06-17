@@ -1,77 +1,8 @@
-lightGallery(document.getElementById('lightgallery-1'), {
-    speed: 500,
-    download: false
-});
-
-lightGallery(document.getElementById('lightgallery-2'), {
-    speed: 500,
-    download: false
-});
-
-lightGallery(document.getElementById('lightgallery-3'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-4'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-5'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-6'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-7'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-8'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-9'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-10'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-11'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-12'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-13'), {
-  speed: 500,
-  download: false
-});
-
-lightGallery(document.getElementById('lightgallery-14'), {
-  speed: 500,
-  download: false
-});
-
 lightGallery(document.getElementById('lightgallery-vz'), {
-    speed: 500,
-    download: false
-});
+  speed: 500,
+  download: false
+  });
+  
 
 $('.hamburger-button').click(function(){
     $('.mobile-menu').fadeToggle(100);
