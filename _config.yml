@@ -11,6 +11,7 @@ _select_data:
     col-6_sm-12: polovina
     col-4_sm-12: třetina
     col-3_sm-12: čtvrtina
+    col-2_sm-12: pětina
   
   ids:
    /galerie#projekt-1: k-h
