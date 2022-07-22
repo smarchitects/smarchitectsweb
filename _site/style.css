@@ -48,7 +48,7 @@ a:hover{
 /* ------------- Utility Classes --------------  */
 
 
-
+.tall-30 { min-height: 30vh; }
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
@@ -66,6 +66,7 @@ a:hover{
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
 .p-t-0{padding-top:0;}
+.p-b-0{padding-bottom:0;}
 .p-t-3{padding-top:3%;}
 .padded-l-2{padding-left: 2rem;}
 .p-b-8{padding-bottom: 8%;}
@@ -129,6 +130,12 @@ margin-bottom: 1rem;
 
 /* Unique Typography Styles */
 
+footer{
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+}
+
+
 .emphasis {
 font-size: 1.2rem;
 }
@@ -153,6 +160,7 @@ footer h3{
     padding-bottom: 0;
     font-size: 3.5rem;
 }
+
 
 .slova{
     color: var(--writing);
@@ -543,7 +551,11 @@ form button:hover{
 }
 
 
-
+.copyright{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    padding-top: 1rem;
+}
 
 
 
