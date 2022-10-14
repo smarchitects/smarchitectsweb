@@ -1,17 +1,19 @@
 ---
 layout: default
 reference:
-  - text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora necessitatibus quae omnis sit ratione veniam quos dolorum? Tenetur delectus mollitia pariatur expedita dolor voluptas ipsa a corrupti veniam asperiores!
+  - text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora
+      necessitatibus quae omnis sit ratione veniam quos dolorum? Tenetur
+      delectus mollitia pariatur expedita dolor voluptas ipsa a corrupti veniam
+      asperiores!
     author: Nějaké Jméno
-  - text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora necessitatibus quae   omnis sit ratione veniam quos dolorum? Tenetur delectus mollitia pariatur expedita dolor voluptas ipsa a corrupti veniam asperiores!
+  - text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tempora
+      necessitatibus quae   omnis sit ratione veniam quos dolorum? Tenetur
+      delectus mollitia pariatur expedita dolor voluptas ipsa a corrupti veniam
+      asperiores!
     author: Nějaké Jméno
 ---
-
-
-
-
-
-
 <section class="grid-spaceAround padded" id="testimonials"> 
     <p class="col-12 center bigger"> Reference  </p>  
     
@@ -20,6 +22,7 @@ reference:
         {%for item in page.reference%}
       <div class="slider-item"> 
         <p class="editable">
+            Pokus hokus
             {{item.text}}
         </p>
         <p class="right author"> - <em>{{item.author}}</em></p>  
