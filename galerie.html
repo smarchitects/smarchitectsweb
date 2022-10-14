@@ -18,15 +18,15 @@ galleries:
       - column-size: col-6_sm-12
         aspect-ratio: landscape
         background_image: /images/2.jpg
-        description: xxx
+        description: Harrachov Karolina, interiér podkroví
       - column-size: col-6
         aspect-ratio: landscape
-        background_image: /images/2.jpg
-        description: xxx
+        background_image: /images/Harrachovinterier/LOZNICE_02_CORR04L_.jpg
+        description: Ložnice
       - column-size: col-12
         aspect-ratio: landscape
-        background_image: /images/2.jpg
-        description: xxx
+        background_image: /images/Harrachovinterier/OBYVAK_JIDELNA_01_CORR04L_.jpg
+        description: Karolína Harrachov interiér kuchyně
   - gallery:
       - column-size: col-6
         aspect-ratio: landscape
@@ -184,7 +184,6 @@ galleries:
         background_image: /images/14.jpg
         description: xxx
 ---
-
 {%for section in page.galleries%}
 <section class="padded">
     <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
@@ -194,8 +193,7 @@ galleries:
         {% for item in section.gallery %}
       
           <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-            <div class="bg-image lazy-div relative {{item.aspect-ratio}}" 
-                data-main="{{item.background_image}}">
+            <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
                 <div class="galerie-overlay">
                   {{item.description}}
                 </div>
