@@ -1,41 +1,42 @@
 ---
 layout: default
 team:
- - photo_image: /images/demo-photo1.jpg
-   name: Jiří Soukup
-   size: col-2_sm-12
-   vzdelani: VŠE, Praha
-   email: test@test.com
-   cislo: +420000000000 
- - photo_image: /images/placeholder.jpg
-   name: Tereza Mosbauerová
-   size: col-2_sm-12
-   vzdelani: VŠE, Praha
-   email: test@test.com
-   cislo: +420000000000
- - photo_image: /images/placeholder.jpg
-   name: Tereza Mosbauerová
-   size: col-2_sm-12
-   vzdelani: VŠE, Praha
-   email: test@test.com
-   cislo: +420000000000
- - photo_image: /images/placeholder.jpg
-   name: Tereza Mosbauerová
-   size: col-2_sm-12
-   vzdelani: VŠE, Praha
-   email: test@test.com
-   cislo: +420000000000
- - photo_image: /images/placeholder.jpg
-   name: Tereza Mosbauerová
-   size: col-2_sm-12
-   vzdelani: VŠE, Praha
-   email: test@test.com
-   cislo: +420000000000
+   -
+      photo_image: /images/demo-photo1.jpg
+      name: Jiří Soukup
+      size: col-2_sm-12
+      vzdelani: VŠE, Praha
+      email: test@test.com
+      cislo: 420000000000
+   -
+      photo_image: /images/placeholder.jpg
+      name: Tereza Mosbauerová
+      size: col-2_sm-12
+      vzdelani: VŠE, Praha
+      email: test@test.com
+      cislo: 420000000000
+   -
+      photo_image: /images/placeholder.jpg
+      name: Tereza Cihlářová
+      size: col-2_sm-12
+      vzdelani: VŠE, Praha
+      email: test@test.com
+      cislo: 420000000000
+   -
+      photo_image: /images/placeholder.jpg
+      name: Petr Husák
+      size: col-2_sm-12
+      vzdelani: VŠE, Praha
+      email: test@test.com
+      cislo: 420000000000
+   -
+      photo_image: /uploads/lego-panacek.jpg
+      name: Šárka Böhmová
+      size: col-2_sm-12
+      vzdelani: VŠE, Praha
+      email: test@test.com
+      cislo: 420000000000
 ---
-
-
-
-
 <section class="padded grid">
     <div class="col-12 center">
         <h3 class="editable">Lorem ipsum něco něco</h3>
@@ -83,7 +84,7 @@ team:
     <section class="popup" data-pop="{{popup.name}}">
       <div class="grid-spaceBetween">
         <div class="col-5_sm-12">
-          <img src="{{popup.photo_image}}" class="popup-photo img-team">
+          <img src="{{popup.photo_image}}" class="popup-photo img-team" />
         </div>
         <div class="col-5-middle">
             <h2>{{popup.name}}</h2>
@@ -92,7 +93,7 @@ team:
             <p>Telefon: <a href="tel:{{popup.cislo}}"> {{popup.cislo}}</a></p>
         </div>
         <div class="popupX">  
-            <svg viewBox="0 0 100 100">
+            <svg viewbox="0 0 100 100">
             <path d="M 0,0 L100,100" />
             <path d="M 100,0 L0,100" />
             </svg>
