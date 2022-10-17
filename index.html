@@ -4,22 +4,22 @@ gallery:
   - column-size: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/1.jpg
-    description: 2022 project 1
+    description: 2022 Karolína Harrachov
     id: /galerie#projekt-1
   - column-size: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/2.jpg
-    description: 2022 project 2
+    description: 2022 Karolina Harrachov
     id: /galerie#projekt-2
   - column-size: col-4_sm-12
     aspect-ratio: landscape
     background_image: /images/3.jpg
-    description: 2022 xxx
+    description: 2022 ZZS Benátky n. Jizerou
     id: /galerie#projekt-3
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/4.jpg
-    description: 2022 xxx
+    description: 2022 bytový komplex Skalka
     id: /galerie#projekt-4
   - column-size: col-4_sm-12
     aspect-ratio: square
@@ -72,12 +72,6 @@ gallery:
     description: 2022 xxx
     id: /galerie#projekt-14
 ---
-
-
-
-
-
-
 <section class="padded">
     <div class="capped-width m-l-center m-r-center">
       <!-- <h2 class="center bold-text">Inspirujte se...</h2> -->
@@ -85,8 +79,7 @@ gallery:
         {% for item in page.gallery %}
       
           <a class="{{item.column-size}} gallery-item" href="{{item.id}}">
-            <div class="bg-image relative {{item.aspect-ratio}}" 
-                style="background-image: url('{{item.background_image}}');">
+            <div class="bg-image relative {{item.aspect-ratio}}" style="background-image: url('{{item.background_image}}');">
                 <div class="galerie-overlay">
                   {{item.description}}
                 </div>
