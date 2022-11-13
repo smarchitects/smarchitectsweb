@@ -273,6 +273,7 @@ footer h3{
 .galerie-overlay:hover{
     opacity: 1;
     transition: 0.3s;
+    text-align: center;
 }
 /* Hamburger nav styles */
 
@@ -354,7 +355,6 @@ a{
 
 .web-nav a:hover{
     color: var(--featured);
-    font-size: 2.1rem;
     transition: 0.2s;
 }
 
@@ -423,6 +423,10 @@ a{
 
 
   /* Hover team styles */
+
+.team-text{
+    font-size: 1.3rem;
+}  
 .hover-container {
     background-size: cover;
     background-position: center;
@@ -543,7 +547,7 @@ form button:hover{
     color: var(--featured);
     border: 2px solid var(--featured);
     transition: 0.2s;
-
+    cursor: pointer;
 }
 
 #kontakt{
@@ -560,6 +564,9 @@ form button:hover{
 
 
 @media(max-width:48em) {
+    .logo{
+        font-size: 6rem;
+    }
     .mob-hide { display: none; }
     .mob-show { display: block; }
     .logo{
