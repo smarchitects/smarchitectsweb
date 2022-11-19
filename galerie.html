@@ -1,9 +1,9 @@
 ---
 layout: default
 galleries:
+  - headline: 2021TenisBenatky
+  - popisek: test test test 
   - gallery:
-    - headline: test
-    - popisek: test test test test test
       - column-size: col-4_sm-12
         aspect-ratio: landscape
         background_image: /images/1.jpg
@@ -409,13 +409,13 @@ galleries:
 {%for section in page.galleries%}
 <section class="padded">
     <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
+      <div class="center">
+        <h2>{{section.headline}}</h2>
+        <p>{{section.popisek}}</p>
+      </div>
       {% for item in section.gallery %}
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       <div class="gallery grid" id="lightgallery-{{forloop.index}}">
-        <div class="col-12 center">
-          <h2>{{item.headline}}</h2>
-          <p>{{item.popisek}}</p>
-        </div>
           <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
                 <div class="galerie-overlay">
