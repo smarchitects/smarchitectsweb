@@ -2,8 +2,8 @@
 layout: default
 galleries:
   - gallery:
-      - headline: LOREM test test 
-      - popisek: lorem lorem lorem lorem lorem
+      - headline: TEST 
+      - popisek: test test test test test
       - column-size: col-4_sm-12
         aspect-ratio: landscape
         background_image: /images/1.jpg
@@ -410,13 +410,13 @@ galleries:
 <section class="padded">
     <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
       {% for item in section.gallery %}
-      <div class="center">
-        <h2 class="#">{{item.headline}}</h2>
-        <p>{{item.popisek}}</p>
-      </div>
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       
       <div class="gallery grid" id="lightgallery-{{forloop.index}}">
+        <div class="center">
+          <h2 class="#">{{item.headline}}</h2>
+          <p>{{item.popisek}}</p>
+        </div>
           <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
                 <div class="galerie-overlay">
