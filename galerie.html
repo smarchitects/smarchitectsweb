@@ -1,9 +1,6 @@
 ---
 layout: default
 galleries:
- - section:
-  - headline: test 
-  - popisek: test test test
   - gallery:
       - column-size: col-4_sm-12
         aspect-ratio: landscape
@@ -410,10 +407,6 @@ galleries:
 {%for section in page.galleries%}
 <section class="padded">
     <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
-      <div class="center">
-        <h2>{{section.headline}}</h2>
-        <p>{{section.popisek}}</p>
-      </div>
       {% for item in section.gallery %}
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       <div class="gallery grid" id="lightgallery-{{forloop.index}}">
