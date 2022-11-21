@@ -2,8 +2,8 @@
 layout: default
 galleries:
   - gallery:
-     headline: Test test Test
-     about: lorem ipsum sid dolores
+    - headline: Test test Test
+    - about: lorem ipsum sid dolores
     - column-size: col-4_sm-12
       aspect-ratio: landscape
       background_image: /images/1.jpg
@@ -408,15 +408,16 @@ galleries:
 ---
 {%for section in page.galleries%}
 <section class="padded">
+  <div class="col-12 center">
+    {%for gallery in section.gallery%}
+    <h2>{{gallery.headline}}</h2>
+    <p>{{gallery.about}}</p>
+    {%endfor%}
+  </div>
   <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       
-      <div class="col-12 center">
-        {%for gallery in section.gallery%}
-        <h2>{{gallery.headline}}</h2>
-        <p>{{gallery.about}}</p>
-        {%endfor%}
-      </div>
+     
       
     <div class="gallery grid" id="lightgallery-{{forloop.index}}">
       
