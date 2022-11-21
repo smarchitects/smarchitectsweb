@@ -412,10 +412,7 @@ galleries:
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       <div class="gallery grid" id="lightgallery-{{forloop.index}}">
         {% for item in section.gallery %}
-        <div class="col-12 center">
-          <h2>{{item.headline}}</h2>
-          <p>{{item.about}}</p>
-        </div>
+        
           <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
                 <div class="galerie-overlay">
@@ -423,6 +420,10 @@ galleries:
                 </div>
             </div>
           </a> 
+          <div class="col-12 center">
+            <h2>{{item.headline}}</h2>
+            <p>{{item.about}}</p>
+          </div>
       
         {% endfor %}
       </div>
