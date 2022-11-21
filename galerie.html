@@ -410,12 +410,14 @@ galleries:
 <section class="padded">
   <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
-      {%for gallery in section.gallery%}
+      
       <div class="col-12 center">
+        {%for gallery in section.gallery%}
         <h2>{{gallery.headline}}</h2>
         <p>{{gallery.about}}</p>
+        {%endfor%}
       </div>
-      {%endfor%}
+      
     <div class="gallery grid" id="lightgallery-{{forloop.index}}">
       
       {% for item in section.gallery %}
