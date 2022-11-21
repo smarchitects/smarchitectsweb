@@ -408,32 +408,31 @@ galleries:
 ---
 {%for section in page.galleries%}
 <section class="padded">
-  {% for item in section.gallery %}
-      <div class="grid">
-      <div class="col-12 center">
-        <h2>{{item.headline}}</h2>
-        <p>{{item.about}}</p>
-      </div>
-      </div>
-    <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
+  <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
       
-      <div class="gallery grid" id="lightgallery-{{forloop.index}}">
-        
-          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-            <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
-                <div class="galerie-overlay">
-                  {{item.description}}
-                </div>
+    <div class="gallery grid" id="lightgallery-{{forloop.index}}">
+      {%for gallery in section.gallery%}
+      <div class="center">
+        <h2>{{gallery.headline}}</h2>
+        <p>{{gallery.about}}</p>
+        </div>
+      {%endfor%}
+      {% for item in section.gallery %}
+        <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+          <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
+            <div class="galerie-overlay">
+              {{item.description}}
             </div>
-          </a> 
-         
-      
+          </div>
+        </a> 
         
-      </div>
+    
       {% endfor %}
+    </div>
+    
   </div>
-  </section>
+</section>
 {%endfor%}
 
 
@@ -446,3 +445,4 @@ galleries:
   });
   {%endfor%}
 </script>
+
