@@ -410,13 +410,12 @@ galleries:
 <section class="padded">
     <div class="capped-width m-l-center m-r-center" id="projekt-{{forloop.index}}">
       <!-- <h2 class="center bold-text" id="projekt-1">Projekt 1</h2> -->
-      <div class="col-12 center">
-        <h2>{{item.headline}}</h2>
-        <p>{{item.about}}</p>
-        </div>
       <div class="gallery grid" id="lightgallery-{{forloop.index}}">
         {% for item in section.gallery %}
-      
+        <div class="col-12 center">
+          <h2>{{item.headline}}</h2>
+          <p>{{item.about}}</p>
+          </div>
           <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
             <div class="bg-image lazy-div relative {{item.aspect-ratio}}" data-main="{{item.background_image}}">
                 <div class="galerie-overlay">
