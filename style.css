@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
   
+[class*="col-"], [class*="col_"], [class~="col"] {
+    padding:0;
+}
+
 body {
 font-family: 'Century Gothic W05 Regular';
 color: var(--writing);
@@ -53,6 +57,7 @@ a:hover{
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
 .tall-80 { min-height: 80vh; }
+.tall-85 { min-height: 85vh; }
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
 .tall-200 { min-height: 200vh; }
@@ -62,6 +67,10 @@ a:hover{
 
 
 .padded   {  padding: 5%;    }
+.padded-gallery   {  
+    padding: 0% 5%;
+    margin-top: 5%;
+}
 .padded-05 {  padding: 0.5rem;  }
 .padded-1 {  padding: 1rem;  }
 .padded-2 {  padding: 2rem;  }
@@ -71,6 +80,9 @@ a:hover{
 .padded-l-2{padding-left: 2rem;}
 .p-b-8{padding-bottom: 8%;}
 .neg-m-b{margin-bottom: -0.2rem;}
+.m-neg-1{margin-bottom: -1rem;}
+.m-b-2{margin-bottom: 2rem;}
+.m-t-2{margin-top: 2rem;}
 .padded-b-0{padding-bottom:0;}
 
 .capped-width { max-width: 1100px; margin: auto;}
@@ -99,6 +111,7 @@ a:hover{
   
 .landscape-wide{padding-bottom: 56%;}
 
+.blocktext{text-align: justify;}
 
 
 /* General typography */
@@ -165,7 +178,6 @@ footer h3{
 .slova{
     color: var(--writing);
     padding-bottom:0;
-    margin-top: 2rem;
 
 }
 
@@ -230,7 +242,7 @@ footer h3{
 }
 
 .capped-width{
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .img-team{
