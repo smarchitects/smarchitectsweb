@@ -50,6 +50,10 @@ a:hover{
     margin: 0;
 }
 
+.hidden-overflow{
+    overflow-x: hidden;
+}
+
 /* ------------- Utility Classes --------------  */
 
 
