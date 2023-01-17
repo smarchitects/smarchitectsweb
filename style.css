@@ -52,6 +52,7 @@ a:hover{
 
 .hidden-overflow{
     overflow-x: hidden;
+    position: relative;
 }
 
 /* ------------- Utility Classes --------------  */
