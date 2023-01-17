@@ -26,6 +26,10 @@
     margin:0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 body {
 font-family: 'Century Gothic W05 Regular';
 color: var(--writing);
