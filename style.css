@@ -595,8 +595,7 @@ form button:hover{
     .web-nav{
         font-size: 1.4rem;
     }
-    .bigger{font-size: 2.6rem;}
-    .smaller{font-size: 1.3rem;}
+    footer h3 {font-size: 2.6rem;}
 
 }
 
