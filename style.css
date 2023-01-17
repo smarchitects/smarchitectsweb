@@ -23,6 +23,7 @@
   
 [class*="col-"], [class*="col_"], [class~="col"] {
     padding:0;
+    margin:0;
 }
 
 body {
@@ -573,6 +574,22 @@ form button:hover{
     padding-top: 1rem;
 }
 
+
+
+@media(max-width:64em) {
+    .logo{
+        font-size: 6rem;
+    }
+    .slova{
+        font-size: 1.3rem;
+    }
+    .web-nav{
+        font-size: 1.4rem;
+    }
+    .bigger{font-size: 2.6rem;}
+    .smaller{font-size: 1.3rem;}
+
+}
 
 
 @media(max-width:48em) {
